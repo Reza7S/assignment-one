@@ -1,0 +1,66 @@
+/* মূল কন্টেইনার */
+.banner-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column; /* ওপরের অংশ শেষ হলে নিচের লাল ব্যাকগ্রাউন্ড শুরু হবে */
+}
+
+/* ওপরের সেকশন */
+.top-row {
+  display: flex;
+  width: 100%;
+}
+
+/* ওপরের বামপাশের অর্ধেক খালি জায়গা (গিফট বক্সের ওপরের কনফেটির জন্য) */
+.left-half-top {
+  width: 50%; /* ঠিক অর্ধেক জায়গা */
+}
+
+/* ওপরের ডানপাশের অর্ধেক জায়গা (মেয়ে ও ডিসকাউন্ট) */
+.right-half-top {
+  width: 50%; /* ঠিক অর্ধেক জায়গা */
+  display: flex;
+  align-items: flex-end; /* মেয়ে ও ডিসকাউন্ট নিচে সমান থাকবে */
+  justify-content: flex-end; /* ডানপাশে চেপে থাকবে */
+}
+
+/* মেয়ের ছবি (ডানপাশের অর্ধেকের ভেতর ১০০% চওড়া হবে) */
+.girl-img {
+  width: 75%; /* ডানপাশের অর্ধেক ব্লকের ভেতরে সাইজ এডজাস্টমেন্ট */
+  height: auto;
+  display: block;
+}
+
+/* ৫০% ডিসকাউন্ট ইমেজ */
+.discount-img {
+  width: 30%;
+  height: auto;
+  margin-right: -10%; /* মেয়ের ছবির ওপর সামান্য ওভারল্যাপ */
+  margin-bottom: 30%;
+  position: relative;
+  z-index: 2;
+}
+
+/* নিচের সেকশন (লাল ব্যাকগ্রাউন্ড) */
+.bottom-row {
+  position: relative;
+  width: 100%;
+}
+
+/* লাল ব্যাকগ্রাউন্ড ইমেজ */
+.red-bg-image {
+  width: 100%;
+  display: block;
+}
+
+/* গিফট বক্স (এটি লাল ব্যাকগ্রাউন্ডের ওপর বামপাশের ঠিক অর্ধেক জায়গা নেবে) */
+.gift-box {
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 50%; /* কন্টেইনারের বামপাশের ঠিক অর্ধেক (50%) জায়গা জুড়ে থাকবে */
+  height: auto;
+  z-index: 3;
+}
