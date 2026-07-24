@@ -166,12 +166,13 @@ button:hover {
 
 /* Shedule Style */
 .shedule {
-    height: 282px;
+    height: 482px;
     background: linear-gradient(180deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0) 100%);
     border-radius: 16px;
-     padding: 100px 350px 100px 300px; 
     margin: 0 auto 120px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .shedule .shedule-info {
@@ -179,6 +180,10 @@ button:hover {
     height: 275px;
     text-align: center;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .shedule .shedule-info p {
@@ -358,30 +363,113 @@ span {
     z-index: 1;
     align-self: center;
 }
+
 /* git-container section style */
-.git-container{
-height: 1163px;
+.git-container {
+    height: 1163px;
 }
 
-.git-container h6{
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
+.git-container h6 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 }
-.git-container h4{
-font-weight: 900;
-font-size: 48px;
-line-height: 60px;
+
+.git-container h4 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
 }
-.git-container p{
-font-weight: 400;
-font-size: 20px;
-line-height: 32px;
-color: rgba(7, 2, 17, 0.6);
-max-width: 70%;
-margin-bottom: 26px;
+
+.git-container p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(7, 2, 17, 0.6);
+    max-width: 70%;
+    margin-bottom: 26px;
 }
-.git-container img{
+
+.git-container img {
     margin: 3px;
     max-width: 32.5%;
+}
+
+/* News letter Style */
+
+.newsletter-container {
+    height: 616px;
+    background: rgba(255, 0, 0, 0.05);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto 120px;
+}
+
+.newsletter-container .newsletter-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 896px;
+    height: 336px;
+
+
+}
+
+.newsletter-container .newsletter-info .news-letter-text h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #070211;
+    margin: 40px auto;
+
+}
+
+.newsletter-container .newsletter-info .news-letter-text p {
+    height: 64px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(7, 2, 17, 0.6);
+    margin-bottom: 48px;
+}
+
+.newsletter-container form {
+    width: 648px;
+    height: 72px;
+}
+
+.newsletter-container form input[type='email'] {
+    max-width: 75%;
+    height: 100%;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border: 0;
+    color: rgba(7, 2, 17, 0.3);
+
+
+}
+
+.newsletter-container form button {
+    max-width: 210px;
+    height: 100%;
+    margin: 0;
+    background: #FF0000;
+    border-radius: 0px 50px 50px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all 1s;
 }
